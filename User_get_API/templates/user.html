@@ -1,0 +1,15 @@
+<form method='POST' action=''>{% csrf_token %}
+
+    <div class="form-group">
+
+            <label class="col-md-2 control-label">Category</label>
+            <div class="col-md-2">
+
+                {{ from.category }}
+
+            </div>
+        </div>
+    {{ form.as_p }}
+    <input type="submit" value="Signup">
+
+    </form>
